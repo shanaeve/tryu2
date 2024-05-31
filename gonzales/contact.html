@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOONLIGHT | στοιχεία επικοινωνίας</title>
+    <link rel="icon" href="moon.png">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"> <a href="#">MOONLIGHT</a></div>
+       <ul class="links">
+        <li> <a href="homepage.html">Home</a></li>
+        <li> <a href="homepage.html">About</a></li>
+        <li> <a href="#">Contacts</a></li>
+        <li> <a href="shop.html">Shop</a></li>
+       </ul>
+       <a href="index.html" class="action_btn">Logout</a>                   
+       <i class="fa-solid fa-bars"></i>
+       </div>
+    </div>
+
+    <section class="feedback" id="feedback">
+        <div class="feedback-container">
+            <h1>FEEDBACK</h1>
+            <form>
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" id="submit-btn" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Shana Eve Finals. All rights reserved.</p>
+</footer> 
+
+<script>
+    document.getElementById('submit-btn').addEventListener('click', function() {
+            alert("Sent successful! Thank you for your feedback.");
+        });
+</script>
+
+</body>
+</html>

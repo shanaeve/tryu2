@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    background-color: #ffffff;
+    background-size: cover;
+    color: #000000;
+    background-position: center;
+    font-size: 1 rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.1rem;
+    transition: font-weight 1s ease;
+}
+
+a:hover {
+    font-weight: 1000;
+    color: pink;
+}
+
+ h1 {
+    color: #000000;
+ }
+
+ p {
+    color: #000000;
+ }
+
+/* start header */
+
+.navbar {
+    width: 100vw;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    scale: 1.5;
+    position: fixed;
+    z-index: 1000;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    margin-top: 10px;
+}
+
+.navbar .logo a {
+    margin-left: 250px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: pink  ;
+}
+
+.navbar .links {
+    color: #fff;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .links a:hover {
+    color: pink;
+}
+
+.action_btn {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.3rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    font-size: 1.1rem;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .9rem 3.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: pink;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  color: #000000;
+  margin-left: 40%;
+}
+
+.button:hover {
+  letter-spacing: 3px;
+  color: #ffffff;
+  background-color: #000000;
+  box-shadow: rgb#000000 0px 7px 29px 0px;
+}
+
+.button:active {
+  letter-spacing: 3px;
+  background-color: hsl pink;
+  color: #fff;
+  box-shadow: #000000 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+/* end header */
+
+/*EVE*/
+section {
+    padding: 2rem 9%;
+  }
+  
+  .about {
+    padding-top: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .eve {
+    min-height: 100vh;
+    background-image: url(1.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+    position: relative;
+    margin-top: -200px;
+}
+
+  .rios {
+    min-height: 100vh;
+    background-image: url(2.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+  }
+
+  .rios-container {
+    position: relative;
+    width: 700px;
+    height: auto;
+    border-right: solid 7px #000000 ;
+    text-align: right;
+    padding-right: 30px;
+    top: 50%;
+    right: 15%;
+    margin-right: 10%;
+  }
+
+  .rios-container h1 {
+    font-size: 100px;
+  }
+
+  .rios-container p {
+    font-size: 40px;
+  }
+
+  .shana {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(3.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+  }
+
+  .shana-container {
+    position: relative;
+    width: 700px;
+    height: auto;
+    border-left: solid 7px #000000 ;
+    text-align: left;
+    padding-left: 50px;
+    font-size: 60px;
+    left: 8%;
+    margin-left: 30%;
+  }
+
+  .seven {
+    position: relative;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+  }
+
+  .seven-container {
+    position: relative;
+    width: 700px;
+    height: auto;
+    text-align: left;
+    padding-left: 50px;
+    font-size: 60px;
+    margin-left: -75%;
+    display: flex;
+  }
+
+
+  section #about {
+    height: calc(100hv - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 100px;
+  }
+
+  section #contacts {
+    height: calc(100hv - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: pink;
+  }
+
+  .contact{
+    display: inline-block;
+  margin-top: 1rem;
+  padding: .9rem 3.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: pink;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  color: #000000;
+  }
+
+  .contact:hover {
+    letter-spacing: 3px;
+  color: #ffffff;
+  background-color: #000000;
+  box-shadow: rgb#000000 0px 7px 29px 0px;
+  }
+  
+  #Eve h1 {
+    font-size: 100px;
+    margin-bottom: 1rem;
+    margin-left: 40%;
+
+  }
+
+  #Eve p {
+    font-size: 50px;
+    margin-left: 40%;
+  }
+  
+  /* Responsive DEG*/
+  @MEDIA (max-width: 992px) {
+    navbar .links,
+    .navbar .action_btn {
+      display: none;
+    }
+    
+  }
+  
+/*social*/
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 50px;
+  margin-right: 10%;
+  color: #000000;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+  color: pink;
+  transform: .5s;
+}
+
+
+/*pic*/
+.menu{
+  width: 100%;
+  height: 100vh;
+  padding: 75px 0;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px; 
+  margin-left: 40%;
+}
+
+.menu h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 65px;
+  color: #000;
+}
+
+.menu h1:hover {
+  color: pink;
+  transition: .5s;
+}
+
+.menu h1 span{
+  color: pink;
+  margin-left: 15px;
+  font-size: 100px;
+}
+
+.menu h1 span:hover {
+  color: #000000;
+  transition: .5s;
+}
+
+.menu .menu_box{
+  width: 95%;
+  margin: 45px auto 0 auto;
+  display: grid;
+  grid-gap: 30px 10px;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
+.menu .menu_box .menu_card .menu_img{
+  margin: 0 auto;
+  width: 420px;
+  height: 300px;
+  margin-bottom: 15px;
+}
+
+.menu .menu_box .menu_card .menu_img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 10%;
+}
+
+.menu .menu_box .menu_card .menu_text h2{
+  font-size: 90px;
+  margin-bottom: 15px;
+  color: #000000;
+  margin-left: 100px;
+}
+
+.menu .menu_box .menu_card .menu_text p{
+  line-height: 21px;
+  margin-bottom: 15px;
+  margin: 0 auto;
+  width: 400px;
+  color: #ffffff;
+}
+
+.menu .menu_box .menu_card .menu_text .menu_icon{
+  color: pink;
+  margin: 8px 0;
+}
+
+
+  footer {
+      background: transparent;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 20px;
+  }

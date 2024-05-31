@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    background-image:url(shanaeve.png);
+    background-size: cover;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.1rem;
+    transition: font-weight 1s ease;
+}
+
+a:hover {
+    font-weight: 1000;
+    color: pink;
+}
+
+ h1 {
+    color: #000000;
+ }
+
+ p {
+    color: #000000;
+ }
+
+/* start header */
+#header {
+    position: relative;
+    padding: 0 2rem; 
+}
+
+.navbar {
+    width: 100vw;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    scale: 1.5;
+    position: fixed;
+    z-index: 1000;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+.navbar .logo a {
+    margin-left: 250px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: pink  ;
+}
+
+.navbar .links {
+    color: #fff;
+    display: flex;
+    gap: 2rem;
+    margin-left: -250px;
+}
+
+.navbar .links a:hover {
+    color: pink;
+}
+
+.action_btn {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.3rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    font-size: 1.1rem;
+    margin-left: -250px;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: pink;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  color: #000000;
+  
+}
+
+.button:hover {
+  letter-spacing: 3px;
+  color: #ffffff;
+  background-color: #000000;
+  box-shadow: rgb#000000 0px 7px 29px 0px;
+}
+
+.button:active {
+  letter-spacing: 3px;
+  background-color: hsl pink;
+  color: #fff;
+  box-shadow: #000000 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+/* end header */
+
+
+/*menu*/
+.menu{
+    width: 100%;
+    height: 100vh;
+    padding: 75px 0;
+}
+
+.menu h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 65px;
+    color: pink;
+}
+
+.menu h1:hover {
+    color: #000000;
+}
+
+.menu h1 span{
+    color: #000000;
+    margin-left: 15px;
+    font-size: 100px;
+}
+
+.menu h1 span:hover {
+    color: pink;
+    transition: .5s;
+}
+
+.menu .menu_box{
+    width: 95%;
+    margin: 45px auto 0 auto;
+    display: grid;
+    grid-gap: 20px 10px;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
+.menu .menu_box .menu_card{
+    background-color: #6d6a6a;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    width: 450px;
+    height: 575px;
+    text-align: center;
+    cursor: pointer;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+.menu .menu_box .menu_card:hover{
+    transform: translate(10px);
+}
+
+.menu .menu_box .menu_card .menu_img{
+    margin: 0 auto;
+    width: 420px;
+    height: 300px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 8px rgba(254, 33, 236, 0.7);
+}
+
+.menu .menu_box .menu_card .menu_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.menu .menu_box .menu_card .menu_text h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.menu .menu_box .menu_card .menu_text p{
+    line-height: 21px;
+    margin-bottom: 15px;
+    margin: 0 auto;
+    width: 400px;
+    color: #ffffff;
+}
+
+.menu .menu_box .menu_card .menu_text .menu_icon{
+    color: pink;
+    margin: 8px 0;
+}
+
+.menu .menu_box .menu_card .menu_text .price{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 0;
+    margin-left: 30px;
+}
+
+.menu .menu_box .menu_card .menu_text .price sub{
+    margin-left: 5px;
+    color: #6d6a6a;
+    font-size: 13px;
+}
+
+.menu .menu_box .menu_card .menu_text .menu_btn{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid pink;
+    position: relative;
+    top: 20px;
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.menu .menu_box .menu_card .menu_text .menu_btn:hover{
+    color:black;
+}
+
+.menu .menu_box .menu_card .menu_text .menu_btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: pink;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.menu .menu_box .menu_card .menu_text .menu_btn:hover::before{
+    top: unset;
+    bottom: 0;
+    width: 100%;
+}
+
+.menu .menu_box .menu_card .menu_text .menu_btn i{
+    margin-right: 8px;
+}
+
+footer {
+    background: transparent;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+}

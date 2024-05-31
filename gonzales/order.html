@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOONLIGHT | Σειρά</title>
+    <link rel="icon" href="moon.png">
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul class="links">
+                <div class="logo"><a href="#">MOONLIGHT</a></div>
+
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="homepage.html">About us</a></li>
+                <li><a href="homepage.html">Contact</a></li>
+                <div class="dropdown_menu">
+                    <li><a href="index.html" class="action_btn" onclick="logout()">Logout</a></li>
+                </div>
+            </ul>
+
+        </div>
+
+    </header>
+   
+    <div class="container">
+        <div id="root"></div>
+            <div class="sidebar">
+                <div class="head">My Cart</div>
+                <div id="cartItem">Your cart is empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">₱0.00</h2>
+                </div>
+            <a href="checkout.html"> <button id="placeOrderButton">Place Order</button> </a>         
+            </div>
+            
+            </div>          
+    </div>
+
+    <script src="order.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Shana Eve Finals. All rights reserved.</p>
+    </footer>  
+</body>
+</html>

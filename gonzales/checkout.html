@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOONLIGHT | Ολοκλήρωση αγοράς</title>
+    <link rel="icon" href="moon.png">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul class="links">
+         <div class="logo"><a href="#">MOONLIGHT</a></div>
+         <li> <a href="homepage.html">Home</a></li>
+         <li> <a href="homepage.html">About</a></li>
+         <li> <a href="contact.html">Contacts</a></li>
+         <li> <a href="#">Shop</a></li>
+        </ul>
+        </div>
+
+    <div class="checkout-container">
+    
+        <h2>Checkout</h2>
+        
+            <div class="input-group">
+                <label>Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label>Address</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="input-group">
+                <label>Contact Number</label>
+                <input type="number" id="number" name="number" required>
+            </div>
+            <div class="input-group">
+                <label>Mode of Payment</label>
+                <div class="radio-group">
+                    <input type="radio" id="cash" name="payment" value="cash" onclick="toggleCardNumberInput()">
+                    <label for="cash">Cash</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="card" name="payment" value="card" onclick="toggleCardNumberInput()">
+                    <label for="card">Card</label>
+                </div>
+            </div>
+            <div class="input-group" id="card-number-group" style="display: none;">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number">
+            </div>
+            <button type="done" id="done" onclick="done()">Checkout</button>
+    
+    </div>
+        <footer>
+            <p>&copy; 2024 Shana Eve Finals. All rights reserved.</p>
+        </footer>  
+     
+        <script>
+ function toggleCardNumberInput() {
+            const cardNumberGroup = document.getElementById('card-number-group');
+            const cardRadioButton = document.getElementById('card');
+            
+            if (cardRadioButton.checked) {
+                cardNumberGroup.style.display = 'block';
+            } else {
+                cardNumberGroup.style.display = 'none';
+            }
+        }
+
+        function done() {
+            const paymentMethod = document.querySelector('input[name="payment"]:checked');
+            const cardNumberInput = document.getElementById('card-number');
+
+            if (!paymentMethod) {
+                alert("Please select a mode of payment.");
+                return;
+            }
+
+            if (paymentMethod.value === 'card' && cardNumberInput.value.trim() === '') {
+                alert("Please enter your card number.");
+                return;
+            }
+
+            alert("Checkout successful!");
+            window.location.href = 'shop.html';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Ensure the card number input is hidden on page load
+            toggleCardNumberInput();
+        });
+        </script>
+</body>
+</html>
